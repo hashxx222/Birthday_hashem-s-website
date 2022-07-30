@@ -1,0 +1,109 @@
+#container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    text-align:center;
+    min-height:50vh;
+    justify-content: space-evenly;
+}
+
+#text_pos{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    text-align:center;
+    min-height:50vh;
+    justify-content: space-evenly;
+}
+
+
+
+
+.body{
+    background:linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+
+    
+}
+
+#btn{
+    font-family:'helvetica';
+    font-size:50px;
+    font-weight: 900;
+    width:250px;
+    position: absolute;
+    margin-bottom:150px;
+    border-style:dashed;
+    border-radius: 40px;
+    animation: 3s linear 0s infinite running colorChange_2;
+    color:blue
+    
+    
+}
+
+.entry{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#input{
+    width:100;
+    height:20;
+    font-style: oblique;
+    font-size:40px;
+    margin-top:20px;
+    background:linear-gradient(to right,rgb(8, 173, 71), rgb(209, 3, 37), rgb(1, 1, 243), rgb(235, 24, 59), orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color:white;
+    
+}
+#label{
+    font-size:60px;
+    font-family: cursive;
+    text-align: center;
+    width:300px;
+    margin:auto;
+    border-radius:45%;
+    border-style:dotted;
+    animation: 3s linear 0s infinite running colorChange;
+    color: rgb(235, 8, 45);
+}
+
+
+#birthdaySpeech{
+    font-size: 60px;
+    font-style: italic;
+    font-family: cursive;
+    position:absolute;
+    width: 600px;
+    height:300px;
+    margin-top:0px;
+    margin-bottom: 350px;
+    margin-right:auto;
+    margin-left:auto;
+    background: linear-gradient(to right, red, cyan);
+    border: 4px solid;
+    text-align: center;
+
+}
+
+@keyframes colorChange{
+
+    0%{background-color:red;}
+    20%{background-color:maroon;}
+    40%{background-color:yellow;}
+    60%{background-color:crimson;}
+    80%{background-color:darkmagenta;}
+    100%{background-color:cyan;}
+}
+@keyframes colorChange_2{
+
+    0%{background-color:red;}
+    20%{background-color:yellow;}
+    40%{background-color:darkred;}
+    60%{background-color:orangered;}
+    80%{background-color:darkmagenta;}
+    100%{background-color:cyan;}
+}
